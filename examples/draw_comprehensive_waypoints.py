@@ -49,7 +49,7 @@ async def main():
                     plt.plot(rep_line[:,0], rep_line[:,1], label="Lane {}".format(lane_id), color='r')
                 else:
                     plt.plot(rep_line[:,0], rep_line[:,1], label="Lane {}".format(lane_id), color='b')
-        
+    plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
     plt.show()
 
 if __name__ == '__main__':
